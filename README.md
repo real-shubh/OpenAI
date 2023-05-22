@@ -10,7 +10,7 @@
 
 **Step 5** - Add this snippet in `app.js`
 
-`const configuration = new Configuration({
+const configuration = new Configuration({
   apiKey: process.env.OPEN_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
@@ -28,4 +28,4 @@ async function runCompletion() {
   }
 }
 
-runCompletion();`
+runCompletion();
