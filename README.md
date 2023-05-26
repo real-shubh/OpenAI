@@ -10,6 +10,7 @@
 
 **Step 5** - Add this snippet in `app.js`
 
+```
 const configuration = new Configuration({
   apiKey: process.env.OPEN_API_KEY,
 });
@@ -29,8 +30,9 @@ async function runCompletion() {
 }
 
 runCompletion();
-
+```
 
 <h3>Learning request Response</h3>
 <h4>Request body attributes: </h4>
-**max_tokens**: 2048
+
+1. **max_tokens** : The maximum number of tokens to generate in the completion. Most models have a context length of **2048** tokens (except for the newest models, which support **4096**).
