@@ -6,6 +6,20 @@ response: any = '';
 loadInterval;
 constructor (private runGPTService: RunGPTService) {}
   
+//     ngAfterViewInit(): void {
+//     //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+//     //Add 'implements AfterViewInit' to the class.
+//     var input = document.getElementById('chatBox') as HTMLInputElement;
+//     input.addEventListener('keypress', function (event) {
+//       if (event.key === 'Enter') {
+//         event.preventDefault();
+//         if (input.value) {
+//           document.getElementById('myBtn').click();
+//         }
+//       }
+//     });
+//   }
+  
 loader() {
     this.loadInterval = setInterval(() => {
       this.response += '.';
